@@ -69,4 +69,13 @@ let rockPaperScissors = (playerChoice, compChoice) => {
 
 }
 
-console.log(rockPaperScissors("paper", getComputerChoice()));
+let game = () => {
+    for (let i = 1; i <= 5; i++) {
+        let playerChoice = prompt("Rock, paper or scissors?");
+        let compChoice = getComputerChoice();
+        console.log(rockPaperScissors(playerChoice, compChoice))
+        console.log(`Computer chose: ${compChoice}`)
+    }
+}
+
+game()
